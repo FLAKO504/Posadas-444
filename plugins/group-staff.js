@@ -10,7 +10,6 @@ let handler = async (m, { conn }) => {
 ┃ • *Nombre:* ELDER
 ┃ • *Rol:* 𝙿𝚛𝚘𝚙𝚒𝚎𝚝𝚊𝚛𝚒𝚘
 ┃ • *Número:* wa.me/50493374435
-
 ╰━━━━━━━━━━━━━━━━━━━━━━━╯
 `.trim();
 
