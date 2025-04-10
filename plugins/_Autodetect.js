@@ -53,11 +53,9 @@ END:VCARD`
 ╚═══════════════════════╝`
   
   let status = `
-╔═【🔓 ELDER-BOT STATUS 】═╗
-║ El grupo se encuentra ahora ${m.messageStubParameters[0] == 'on' ? '*cerrado 🔒*' : '*abierto 🔓*'}.
-║ Acción realizada por: *${usuario}*
-║ Configuración: ${m.messageStubParameters[0] == 'on' ? 'Solo administradores' : 'Todos'}
-╚═══════════════════════╝`
+✦ El grupo ha sido ${m.messageStubParameters[0] == 'on' ? '*cerrado 🔒*' : '*abierto 🔓*'}.
+ Acción realizada por: *${usuario}*
+✦ Ahora: ${m.messageStubParameters[0] == 'on' ? '*Solo administradores*' : '*Todos*'}Pueden enviar mensajes`
   
   let admingp = `
 *El usuario ${usuario} es el nuevo administrador del grupo*
