@@ -53,8 +53,7 @@ END:VCARD`
 ╚═══════════════════════╝`
   
   let status = `
-✦ El grupo ha sido ${m.messageStubParameters[0] == 'on' ? '*cerrado 🔒*' : '*abierto 🔓*'}.
- por: *${usuario}*
+✦ El grupo ha sido ${m.messageStubParameters[0] == 'on' ? '*cerrado 🔒*' : '*abierto 🔓*'} por: *${usuario}*
 
 ✦ Ahora: ${m.messageStubParameters[0] == 'on' ? '*Solo administradores*' : '*Todos*'} Pueden enviar mensajes`
   
