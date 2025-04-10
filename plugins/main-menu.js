@@ -51,23 +51,10 @@ const defaultMenu = {
 Hola *%name* soy *Barboza*
 
 ╔══════ •『 𝑪𝑹𝑬𝑨𝑫𝑶𝑹 』
-║  🖥️ *Posadas*
+║  🖥️ *ELDER-BOT*
 ╚═════ ♢.✰.♢ ══════
-╔══════ •『 𝑰𝑵𝑭𝑶-𝑩𝑶𝑻 』
-║  👤 Cliente: %name
-║  ⭐ Exp: %exp
-║  ⚡ Nivel: %level
-╚═════ ♢.✰.♢ ═══════
 
-╔══════ •『 𝑰𝑵𝑭𝑶-𝑼𝑺𝑬𝑹』
-║  🤖 Bot: ©Bot-Barboza-Ai®
-║  💎 Modo Público
-║  💨 Baileys: Multi Device
-║  🪄 Tiempo Activo: %muptime
-║  🎩 Usuarios: %totalreg 
-╚═════ ♢.✰.♢ ════════
-
-*─ׄ─ׄ─⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׅ─*
+*» 𝘉𝘪𝘦𝘯𝘷𝘦𝘯𝘪𝘥𝘰, 𝘦𝘴𝘵𝘦 𝘦𝘴 𝘶𝘯 𝘮𝘦𝘯𝘶́ 𝘳𝘦𝘴𝘶𝘮𝘪𝘥𝘰 𝘥𝘦 𝘵𝘰𝘥𝘰 𝘭𝘰 𝘲𝘶𝘦 𝘤𝘰𝘯𝘵𝘪𝘦𝘯𝘦 𝘌𝘭𝘥𝘦𝘳-𝘣𝘰𝘵.*
  %readmore
 \t\t\t⚙️_*𝐋𝐈𝐒𝐓𝐀 𝐃𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒*_ 🚀
 `.trimStart(),
