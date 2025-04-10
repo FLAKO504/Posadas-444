@@ -61,7 +61,7 @@ END:VCARD`
   
   let admingp = `
 ╔═【 👑 BARBOZA-BOT ADMIN 】═╗
-║ *${m.messageStubParameters[0].split`@`[0]}* ha sido ascendido al Olimpo de los administradores.
+║ *${usuario}* ha sido ascendido al Olimpo de los administradores.
 ║ Operación ejecutada por: *${usuario}*
 ╚═══════════════════════╝`
   
