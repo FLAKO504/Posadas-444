@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
 ┣━━━━━👑 *Propietario* ━━━━━┫
 ┃ • *Nombre:* ELDER
 ┃ • *Rol:* 𝙿𝚛𝚘𝚙𝚒𝚎𝚝𝚊𝚛𝚒𝚘
-┃ • *Número:* wa.me/50493374435
+┃ • *Número:* wa.me/50493374445
 ╰━━━━━━━━━━━━━━━━━━━━━━━╯
 `.trim();
 
