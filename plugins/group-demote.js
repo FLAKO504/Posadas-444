@@ -19,7 +19,7 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'demote')
-await conn.reply(m.chat, `🚩 Usuario degradado.`, m,)
+await conn.reply(m.chat, `🚩 *Usuario degradado*.`, m,)
 await m.react('✅')
 }
 
