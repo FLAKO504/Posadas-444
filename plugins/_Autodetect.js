@@ -47,21 +47,14 @@ END:VCARD`
 ╚═══════════════════════╝`
   
   let newlink = `
-╔══【🔗 BARBOZA-BOT LINK 】══╗
-║ El portal ha sido reiniciado por:
-║   » *${usuario}*
-╚═══════════════════════╝`
-  
-  let status = `
-✦ El grupo ha sido *abierto* *${usuario*
+ El grupo se encuentra ahora ${m.messageStubParameters[0] == 'on' ? '*cerrado 🔒*' : '*abierto 🔓*'}.
+ Acción realizada por: *${usuario}*`
 
-✦ Ahora *todos* pueden enviar mensajes`
-  
   let admingp = `
-*El usuario ${usuario} ha es el nuevo administrador del grupo*
+*El usuario ${usuario} es el nuevo administrador del grupo*
 
 *Acción realizada por: ${usuario}*`
-  
+
   let noadmingp = `
 *El usuario ${usuario} ha sido descendido como admin del grupo*
 
