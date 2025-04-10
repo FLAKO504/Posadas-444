@@ -53,11 +53,9 @@ END:VCARD`
 ╚═══════════════════════╝`
   
   let status = `
-╔═【🔓 BARBOZA-BOT STATUS 】═╗
-║ El grupo se encuentra ahora ${m.messageStubParameters[0] == 'on' ? '*cerrado 🔒*' : '*abierto 🔓*'}.
-║ Acción realizada por: *${usuario}*
-║ Configuración: ${m.messageStubParameters[0] == 'on' ? 'Solo administradores' : 'Todos'}
-╚═══════════════════════╝`
+✦ El grupo ha sido *abierto* *${usuario*
+
+✦ Ahora *todos* pueden enviar mensaje`
   
   let admingp = `
 *El usuario ${usuario} ha es el nuevo administrador del grupo*
@@ -65,10 +63,9 @@ END:VCARD`
 *Acción realizada por: ${usuario}*`
   
   let noadmingp = `
-╔═【⚠️ BARBOZA-BOT REMOCIÓN】═╗
-║ *${m.messageStubParameters[0].split`@`[0]}* ha descendido de su trono de administrador.
-║ Acción realizada por: *${usuario}*
-╚═══════════════════════╝`
+*El usuario ${usuario} ha sido descendido como admin del grupo*
+
+*Acción realizada por : ${usuario}*`
 
   if (chat.detect && m.messageStubType == 21) {
     await conn.sendMessage(m.chat, { text: nombre, mentions: [m.sender] }, { quoted: fkontak })
