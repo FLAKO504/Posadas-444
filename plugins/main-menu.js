@@ -72,8 +72,8 @@ Hola *%name* soy *Barboza*
 \t\t\t⚙️_*𝐋𝐈𝐒𝐓𝐀 𝐃𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒*_ 🚀
 `.trimStart(),
   header: '*╭╍╍╍╍❖【 *%category* 】',
-  body: '┋💎›【 %cmd %islimit %isPremium\n',
-  footer: '*╰╍╍╍╍❖•ೋ° °ೋ•❖╍╍╍╍╯*',
+  body: '*┃➤*【 %cmd %islimit %isPremium\n',
+  footer: '*╰━━━━━━━⋆⋆━━━━━━━─*',
   after: `© ${textbot}`,
 }
 
