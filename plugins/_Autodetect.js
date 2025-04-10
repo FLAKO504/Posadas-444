@@ -55,7 +55,7 @@ END:VCARD`
   let status = `
 ✦ El grupo ha sido *abierto* *${usuario*
 
-✦ Ahora *todos* pueden enviar mensaje`
+✦ Ahora *todos* pueden enviar mensajes`
   
   let admingp = `
 *El usuario ${usuario} ha es el nuevo administrador del grupo*
