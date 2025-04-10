@@ -47,9 +47,18 @@ END:VCARD`
 ╚═══════════════════════╝`
   
   let newlink = `
- El grupo se encuentra ahora ${m.messageStubParameters[0] == 'on' ? '*cerrado 🔒*' : '*abierto 🔓*'}.
- Acción realizada por: *${usuario}*`
-
+╔══【🔗 BARBOZA-BOT LINK 】══╗
+║ El portal ha sido reiniciado por:
+║   » *${usuario}*
+╚═══════════════════════╝`
+  
+  let status = `
+╔═【🔓 BARBOZA-BOT STATUS 】═╗
+║ El grupo se encuentra ahora ${m.messageStubParameters[0] == 'on' ? '*cerrado 🔒*' : '*abierto 🔓*'}.
+║ Acción realizada por: *${usuario}*
+║ Configuración: ${m.messageStubParameters[0] == 'on' ? 'Solo administradores' : 'Todos'}
+╚═══════════════════════╝`
+  
   let admingp = `
 *El usuario ${usuario} es el nuevo administrador del grupo*
 
