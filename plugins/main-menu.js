@@ -48,7 +48,8 @@ let tags = {
 const defaultMenu = {
   before:  `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
 
-Hola *%name* soy *һᥒ ᥱᥣძᥱr*
+let tag = `@${m.sender.split('@')[0]}`;
+    let mensaje = `*Hola ${tag}, Este es el estado del bot*
 
 ╔══════ •『 𝑪𝑹𝑬𝑨𝑫𝑶𝑹 』
 ║  🖥️ *ELDER-BOT*
