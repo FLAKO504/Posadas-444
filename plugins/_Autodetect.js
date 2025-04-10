@@ -60,10 +60,9 @@ END:VCARD`
 ╚═══════════════════════╝`
   
   let admingp = `
-╔═【 👑 BARBOZA-BOT ADMIN 】═╗
-║ *${usuario}* ha sido ascendido al Olimpo de los administradores.
-║ Operación ejecutada por: *${usuario}*
-╚═══════════════════════╝`
+*El usuario ${usuario} ha es el nuevo administrador del grupo*
+
+*Acción realizada por: ${usuario}*`
   
   let noadmingp = `
 ╔═【⚠️ BARBOZA-BOT REMOCIÓN】═╗
