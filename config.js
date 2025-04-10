@@ -9,9 +9,10 @@ import axios from 'axios'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.owner = [
-  ['50493374445', 'Elder-OFC',true],
-  ['50489513153', 'Elder-OFC],
-  
+  ['584146277368', 'Barboza OFC',true],
+  ['584123989549', 'sisked',true],
+  ['50557865603', 'Willzek',true],
+  ['5212441357601', 'Emma (Violets Version)',true],
 ]
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -22,14 +23,14 @@ global.prems = []
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.packname = `[ 🌪️Sticker Maker`
-global.author = 'Elder-bot]'
-global.stickpack = '©ᑲ᥆𝗍 һᥒ ᥱᥣძᥱr'
-global.stickauth = 'ᑲᥡ һᥒ ᥱᥣძᥱr'
+global.author = 'ᑲ᥆𝗍 ᑲᥲrᑲ᥆zᥲ 🌪️]'
+global.stickpack = '©ᑲ᥆𝗍 ᑲᥲrᑲ᥆zᥲ-ᥲі'
+global.stickauth = 'ᑲᥡ ᑲᥲrᑲ᥆zᥲ'
 global.wm = 'ᑲᥲrᑲ᥆zᥲ 🌪️'
-global.dev = '> *© ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr* ❀'
+global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ ᑲᥲrᑲ᥆zᥲ ❀'
 global.wait = '🌪️ *Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ, sᴏʏ ʟᴇɴᴛ𝙾... ฅ^•ﻌ•^ฅ\n\n> ᑲ᥆𝗍 ᑲᥲrᑲ᥆zᥲ 🌪️*'
-global.botname = '[ > *© ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr* ]'
-global.textbot = `> *© ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr*`
+global.botname = '[ 🌪️𝐁𝐚𝐫𝐛𝐨𝐳𝐚 𝐀𝐢 𝐖𝐡𝐚𝐬𝐀𝐩𝐩 𝐁𝐨𝐭 ]'
+global.textbot = `Powered By Bot Barboza🌪️`
 global.listo = '*Aqui tiene ฅ^•ﻌ•^ฅ*'
 global.namechannel = 'ᑲ᥆𝗍 ᑲᥲrᑲ᥆zᥲ-ᥲі🌪️'
 
