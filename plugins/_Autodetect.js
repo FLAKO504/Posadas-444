@@ -63,7 +63,7 @@ END:VCARD`
 *Acción realizada por: ${usuario}*`
 
   let noadmingp = `
-*El usuario ${usuario} ha sido descendido como admin del grupo*
+*El usuario @${m.messageStubParameters[0].split`@`[0]} ha sido descendido como admin del grupo*
 
 *Acción realizada por : ${usuario}*`
 
