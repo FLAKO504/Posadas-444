@@ -46,17 +46,17 @@ let tags = {
 }
 
 const defaultMenu = {
-before:  `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
+  before:  `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
 
-Hola @${m.sender.split("@")[0]}, soy *һᥒ ᥱᥣძᥱr*
+Hola *%name* soy *һᥒ ᥱᥣძᥱr*
 
 ╔══════ •『 𝑪𝑹𝑬𝑨𝑫𝑶𝑹 』
 ║  🖥️ *ELDER-BOT*
 ╚═════ ♢.✰.♢ ══════
 
-*» 𝘉𝘪𝘦𝘯𝘷𝘦𝘯𝘪𝘥𝘰, 𝘦𝘴𝘵𝘦 𝘦𝘴 𝘶𝘯 𝘮𝘦𝘯𝘶́ 𝘳𝘦𝘴𝘶𝘮𝘪𝘥𝘰 𝘥𝘦 𝘵𝘰𝘥𝘰 𝘭𝘰 𝘲𝘶𝘦 𝘤𝘰𝘯𝘵𝘪𝘦𝘯𝘦.*
-%readmore
-⚙️_*𝐋𝐈𝐒𝐓𝐀 𝐃𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒*_ 🚀
+*» 𝘉𝘪𝘦𝘯𝘷𝘦𝘯𝘪𝘥𝘰, 𝘦𝘴𝘵𝘦 𝘦𝘴 𝘶𝘯 𝘮𝘦𝘯𝘶́ 𝘳𝘦𝘴𝘶𝘮𝘪𝘥𝘰 𝘥𝘦 𝘵𝘰𝘥𝘰 𝘭𝘰 𝘲𝘶𝘦 𝘤𝘰𝘯𝘵𝘪𝘦𝘯𝘦 𝘌𝘭𝘥𝘦𝘳-𝘣𝘰𝘵.*
+ %readmore
+\t\t\t⚙️_*𝐋𝐈𝐒𝐓𝐀 𝐃𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒*_ 🚀
 `.trimStart(),
   header: '*╭╍╍╍╍❖【 *%category* 】',
   body: '*┃➤*【 %cmd %islimit %isPremium\n',
@@ -168,8 +168,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
    }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
-    let pp = 'https://i.postimg.cc/hv94Q6R8/IMG-20250408-WA0103.jpg'
-    let pp2 = 'https://i.postimg.cc/hv94Q6R8/IMG-20250408-WA0103.jpg'
+    let pp = 'https://i.ibb.co/CPVcnqH/file.jpg'
+    let pp2 = 'https://i.ibb.co/9WrytGt/file.jpg'
     let pp3 = 'https://i.ibb.co/CPVcnqH/file.jpg'
     let pp4 = 'https://i.ibb.co/9WrytGt/file.jpg'
     let pp5 = 'https://i.ibb.co/CPVcnqH/file.jpg'
