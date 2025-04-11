@@ -48,8 +48,7 @@ let tags = {
 const defaultMenu = {
   before:  `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
 
-Hola ${tag}, soy *һᥒ ᥱᥣძᥱr*
-   `.trimStart(),
+Hola *%name* soy *һᥒ ᥱᥣძᥱr*
 
 ╔══════ •『 𝑪𝑹𝑬𝑨𝑫𝑶𝑹 』
 ║  🖥️ *ELDER-BOT*
@@ -184,7 +183,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp13 = 'https://i.ibb.co/Cs6Tt9V/Sylph.jpg'
     let pp14 = 'https://i.ibb.co/JmcS3kv/Sylph.jpg'
     let pp15 = 'https://i.ibb.co/Cs6Tt9V/Sylph.jpg'
-    let img = 'https://i.postimg.cc/hv94Q6R8/IMG-20250408-WA0103.jpg'
+    let img = 'https://qu.ax/Mvhfa.jpg'
     let img2 = 'https://d.uguu.se/iqqLBUfF.jpg'
     await m.react('⭐')
    // await conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, pp11, pp12, pp13, pp14, pp15].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: estilo })
