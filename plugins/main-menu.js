@@ -46,9 +46,9 @@ let tags = {
 }
 
 const defaultMenu = {
-  before:  `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
-
-Hola *%name* soy *һᥒ ᥱᥣძᥱr*
+before:  `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
+ 
+Hola ${tag}, soy *һᥒ ᥱᥣძᥱr*
 
 ╔══════ •『 𝑪𝑹𝑬𝑨𝑫𝑶𝑹 』
 ║  🖥️ *ELDER-BOT*
