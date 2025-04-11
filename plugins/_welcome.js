@@ -14,7 +14,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
         .replace('@user', () => user)
         .replace('@group', () => groupMetadata.subject)
         .replace('@desc', () => groupMetadata.desc || 'sin descripción');
-      await conn.sendAi(m.chat, botname, textbot, welcome, img, img, canal)
+      await conn.sendAi(m.chat, botname, textbot, welcome, img, img,)
     } else {
       let bienvenida = `┌─★ _Elder Bot_ \n│「 _Bienvenido_ 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  _Bienvenido_ a\n   │✑  ${groupMetadata.subject}\n   │✑  _Descripción_:\n${groupMetadata.desc || '_sin descripción_'}\n   └───────────────┈ ⳹`
       await conn.sendAi(m.chat, botname, textbot, bienvenida, img, img)
