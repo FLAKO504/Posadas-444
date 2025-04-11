@@ -68,8 +68,8 @@ setTimeout(async () => {
 let codeBot = await conn.requestPairingCode(cleanedNumber);
 codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot;
 let txt = '🚀 S E R B O T - S U B B O T 🚀\n\n*Usa este Código para convertirte en un Sub Bot*\n\n🚀 Pasos:\n\n`🚀` : Haga click en los 3 puntos\n\n`🚀` : Toque dispositivos vinculados\n\n`🚀` : Selecciona Vincular con el número de teléfono\n\n`🚀` : Escriba el Codigo\n\n> *Nota:* Este Código solo funciona en el número que lo solicito.';
-await parent.reply(m.chat, txt, m, rcanal);
-await parent.reply(m.chat, codeBot, m, rcanal);
+await parent.reply(m.chat, txt, m,);
+await parent.reply(m.chat, codeBot, m,);
 rl.close();
 }, 3000);
 }
@@ -90,10 +90,10 @@ if (global.db.data == null) loadDatabase();
 if (connection == 'open') {
 conn.isInit = true;
 global.conns.push(conn);
-await parent.reply(m.chat, args[0] ? '🚀 Conectado con éxito al WhatsApp.' : '🚩 Vinculaste un Sub-Bot con éxito.', m, rcanal);
+await parent.reply(m.chat, args[0] ? '🚀 Conectado con éxito al WhatsApp.' : '🚩 Vinculaste un Sub-Bot con éxito.', m,);
 await sleep(5000);
 if (args[0]) return;
-await parentw.reply(conn.user.jid, `🚩 *Para volver a vincular un sub Bot use su token`, m, rcanal)
+await parentw.reply(conn.user.jid, `🚩 *Para volver a vincular un sub Bot use su token`, m,)
 }}
 setInterval(async () => {
 if (!conn.user) {
