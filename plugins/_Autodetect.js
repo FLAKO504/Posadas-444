@@ -58,12 +58,12 @@ END:VCARD`
 ✦ Ahora: ${m.messageStubParameters[0] == 'on' ? '*Solo administradores*' : '*Todos*'} Pueden enviar mensajes`
   
   let admingp = `
-*El usuario @${m.messageStubParameters[0].split`@`[0]} es el nuevo administrador del grupo*
+🚩 *El usuario @${m.messageStubParameters[0].split`@`[0]} es el nuevo administrador del grupo*
 
 *Acción realizada por: ${usuario}*`
 
   let noadmingp = `
-*El usuario @${m.messageStubParameters[0].split`@`[0]} ha sido descendido como admin del grupo*
+🚩 *El usuario @${m.messageStubParameters[0].split`@`[0]} ha sido descendido como admin del grupo*
 
 *Acción realizada por : ${usuario}*`
 
