@@ -179,6 +179,8 @@ let handler = async (m, { conn }) => {
 > *© ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr*
 `.trim();
 
+m.react('🔰');
+
         // Enviar solo el texto del menú
         await conn.sendMessage(m.chat, { 
     image: { url: 'https://i.postimg.cc/hv94Q6R8/IMG-20250408-WA0103.jpg' }, 
