@@ -1,10 +1,13 @@
 let handler = async (m, { conn }) => {
-let tag = `${conn.getName(m.sender)}`;
- let txt = `*╭━━━━━━━━⋆⋆━━━━━━━━─*
-*┃➤* 👋🏻 𝙃𝙊𝙇𝘼, 𝙃𝙐𝙈𝘼𝙉𝙊
-*┃➤* *${tag}*
-*┃➤* 𝙎𝙊𝙔 𝙀𝙇𝘿𝙀𝙍-𝘽𝙊𝙏 👨🏻‍💻
-*╰━━━━━━━━⋆⋆━━━━━━━━─*
+    try {
+        let d = new Date();
+        let locale = 'es';
+        let week = d.toLocaleDateString(locale, { weekday: 'long' });
+        let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
+
+        let menu = `
+¡Hola! 👋🏻 @${m.sender.split("@")[0]}
+\`\`\`${week}, ${date}\`\`\`
 
 » 𝘉𝘪𝘦𝘯𝘷𝘦𝘯𝘪𝘥𝘰, 𝘦𝘴𝘵𝘦 𝘦𝘴 𝘶𝘯 𝘮𝘦𝘯𝘶́ 𝘳𝘦𝘴𝘶𝘮𝘪𝘥𝘰 𝘥𝘦 𝘵𝘰𝘥𝘰 𝘭𝘰 𝘲𝘶𝘦 𝘤𝘰𝘯𝘵𝘪𝘦𝘯𝘦 𝘌𝘭𝘥𝘦𝘳-𝘣𝘰𝘵.
 
@@ -173,19 +176,23 @@ let tag = `${conn.getName(m.sender)}`;
 │🎮 .𝘈𝘩𝘰𝘳𝘤𝘢𝘥𝘰
 │🎮 .𝘈𝘥𝘪𝘷𝘪𝘯𝘢𝘳𝘣𝘢𝘯𝘥𝘦𝘳𝘢
 ╰── ⬣
-> *© ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr*`.trim();
+> *© ⍴᥆ᥕᥱrᥱძ ᑲᥡ һᥒ ᥱᥣძᥱr*
+`.trim();
 
 m.react('🔰');
-let perfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.ibb.co/5xMs19nx/file.jpg');
 
-/* await conn.sendMessage(m.chat, { text: txt, contextInfo: { externalAdReply: { title: botname, body: dev, thumbnailUrl: banner, mediaType: 1, showAdAttribution: true, renderLargerThumbnail: true }}} , { quoted: m })
+        // Enviar solo el texto del menú
+        await conn.sendMessage(m.chat, { 
+    image: { url: 'https://i.postimg.cc/hv94Q6R8/IMG-20250408-WA0103.jpg' }, 
+    caption: menu, 
+    mentions: [m.sender] 
+});
+    } catch (e) {
+        await m.reply(`⚠ Error al ejecutar el comando. Intenta nuevamente o reporta este problema.\n\nDetalles del error:\n${e.message}`);
+        console.error(e);
+    }
 };
-*/
-let bann = 'https://cdnmega.vercel.app/media/9wB1HLrT@Jcn5yrz18NjokOpmyK-SS9u-OZc4SyK_2rsVxxQ6wXI';
-
-conn.sendMessage(m.chat, { image: { url: bann }, caption: txt }, { quoted: m });
-}
 
 handler.command = ['allmenu', 'menu', 'menuall', 'menucompleto'];
-
+handler.register = false;
 export default handler;
