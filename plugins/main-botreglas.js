@@ -10,7 +10,7 @@ let yaemori = `☃️ *Respeta las reglas de BotBarboza-Ai-Bot*\n
 
 ☃️ 𝗡𝗼𝘁𝗮: *Si no cumples con las reglas del bot, seras bloqueado.*
 
-☃️ 𝗔𝘃𝗶𝘀𝗼: *Puedes apoyarnos dejando una estrellita ☃️ al repositorio oficial de BotBarboza-Ai.*
+☃️ 𝗔𝘃𝗶𝘀𝗼: *Puedes apoyarnos dejando una estrellita ☃️ al repositorio oficial de Elder-bot.*
 
 ${global.md}`.trim()
 await conn.reply(m.chat, yaemori, m, fake)
