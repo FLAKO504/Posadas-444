@@ -9,7 +9,7 @@ handler.command = 'comprar', /^(ComprarBot|Comprar|comprar|ComprarBot)$/i;
 export default handler;
 
 global.ComprarBot = `
-〔 *Bot Barboza- Ai* 〕
+〔 *Bot Elder- Ai* 〕
 
 *BOT PARA GRUPO* :
 > wa.me/50493374445
