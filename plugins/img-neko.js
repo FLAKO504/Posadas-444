@@ -15,7 +15,6 @@ await m.react('✖️')
 handler.help = ['neko']
 handler.tags = ['search']
 handler.command = ['neko']
-//handler.limit = 1
-handler.register = true 
+//handler.limit = 1 
 
 export default handler
