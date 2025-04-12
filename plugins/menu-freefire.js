@@ -24,6 +24,9 @@ let texto = `> > 𝙈𝙀𝙉𝙐 𝘿𝙀 𝙁𝙍𝙀𝙀 𝙁𝙄𝙍𝙀 �
 ⚔ ➺.6𝘷𝘴6 
 ⚔ ➺.8𝘷𝘴8 
 ⚔ ➺.𝘴𝘤𝘳𝘪𝘮 
+⚔ ➺.𝘪𝘯𝘵𝘦𝘳𝘯𝘢4
+⚔ ➺.𝘤𝘶𝘢𝘥𝘳𝘪𝘭𝘢́𝘵𝘦𝘳𝘰
+⚔ ➺.𝘨𝘶𝘦𝘳𝘳𝘢
 ⚔ ➺.12𝘷𝘴12 
 ⚔ ➺.16𝘷𝘴16 
 ⚔ ➺.20𝘷𝘴20 
@@ -50,5 +53,4 @@ global.db.data.users[m.sender].lastcofre = new Date * 1
 handler.help = ['menuff']
 handler.tags = ['freefire' ,'main'] 
 handler.command = ['menuff', 'menufreefire'] 
-handler.register = true
 export default handler
