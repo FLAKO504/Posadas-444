@@ -1,5 +1,5 @@
 let handler = async (m, { conn }) => {
-let tag = `@${m.sender.split('@')[0]}`;
+let tag = `@ ${m.sender.split('@')[0]}`;
  let txt = `*╔═══════════════╗*
 *╠➤* 𝙃𝙊𝙇𝘼, 𝙃𝙐𝙈𝘼𝙉𝙊 👋
 *╠➤* *${tag}* 
