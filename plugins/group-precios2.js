@@ -18,7 +18,7 @@ let handler = async (m, { conn }) => {
 
     if (m.isGroup) {
         // URL de la imagen
-        const imageUrl = 'https://qu.ax/Mvhfa.jpg'; // Cambia esta URL por la de la imagen que deseas enviar
+        const imageUrl = 'https://i.postimg.cc/hv94Q6R8/IMG-20250408-WA0103.jpg'; // Cambia esta URL por la de la imagen que deseas enviar
 
         // Envía la imagen con el mensaje
         await conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: message }, { mimetype: 'image/jpeg' });
