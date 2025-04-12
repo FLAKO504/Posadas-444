@@ -1,15 +1,19 @@
 const handler = async (m, {conn}) => {
-  m.reply(global.ComprarBot);
+  const message = {
+    image: { url: 'https://i.postimg.cc/hv94Q6R8/IMG-20250408-WA0103.jpg' },
+    caption: global.ComprarBot // Mantiene el texto como subtítulo de la imagen
+  };
+  await conn.sendMessage(m.chat, message);
 };
-handler.command ='comprarbot',/^(ComprarBot|Comprar|comprar|ComprarBot)$/i;
+handler.command = 'comprar', /^(ComprarBot|Comprar|comprar|ComprarBot)$/i;
 export default handler;
 
 global.ComprarBot = `
 〔 *Bot Barboza- Ai* 〕
 
 *BOT PARA GRUPO* :
-> wa.me/584246582666
+> wa.me/50493374445
 
-*BOT PERZONALIZADO* :
-> wa.me/584246582666
+*BOT PERSONALIZADO* :
+> wa.me/50493374445
 `;
