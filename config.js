@@ -9,9 +9,9 @@ import axios from 'axios'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.owner = [
-  ['584146277368', 'Barboza OFC',true],
-  ['50495196873', 'sisked',true],
-  ['50557865603', 'Willzek',true],
+  ['50493374445', 'Elder OFC',true],
+  ['50495196873', 'Elder',true],
+  ['50489513153', 'Elder',true],
   ['5212441357601', 'Emma (Violets Version)',true],
 ]
 
