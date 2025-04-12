@@ -44,7 +44,11 @@ let handler = async (m, { conn }) => {
 `.trim();
 
         // Enviar solo el texto del menú
-        await conn.sendMessage(m.chat, { text: menu, mentions: [m.sender] });
+        await conn.sendMessage(m.chat, { 
+    image: { url: 'https://i.postimg.cc/hv94Q6R8/IMG-20250408-WA0103.jpg' }, 
+    caption: menu, 
+    mentions: [m.sender] 
+});
     } catch (e) {
         await m.reply(`⚠ Error al ejecutar el comando. Intenta nuevamente o reporta este problema.\n\nDetalles del error:\n${e.message}`);
         console.error(e);
