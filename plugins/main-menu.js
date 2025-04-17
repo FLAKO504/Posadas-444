@@ -6,7 +6,7 @@ let handler = async (m, { conn }) => {
         let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
 
         let menu = `
-*¡Hola! 👋🏻* @${m.sender.split("@")[0]}
+*¡Hola! 👋🏻 @${m.sender.split("@")[0]}*
 \`\`\`${week}, ${date}\`\`\`
 
 ╭━━━━━━⋆★⋆━━━━━━─
