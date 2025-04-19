@@ -7,7 +7,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
   let img = await (await fetch(`${pp}`)).buffer()
   
 const resizedImg = await Jimp.read(imgBuffer);
-  resizedImg.resize(650, 350); 
+  resizedImg.resize(700, 500); 
   const img = await resizedImg.getBufferAsync(Jimp.MIME_JPEG);
 
   let chat = global.db.data.chats[m.chat];
