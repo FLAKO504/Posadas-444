@@ -9,7 +9,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
 
     // Procesar la imagen para redimensionarla
   const resizedImg = await Jimp.read(imgBuffer);
-  resizedImg.resize(650, 350); // Cambia el tamaño a 500x500 píxeles (ajusta según tus necesidades)
+  resizedImg.resize(750, 400); // Cambia el tamaño a 500x500 píxeles (ajusta según tus necesidades)
   const img = await resizedImg.getBufferAsync(Jimp.MIME_JPEG);
 
   if (chat.bienvenida && m.messageStubType == 27) {
