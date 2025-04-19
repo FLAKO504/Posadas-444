@@ -30,31 +30,3 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
   // El resto del código permanece igual
 }
-
-  if (chat.bienvenida && m.messageStubType == 28) {
-    if (chat.sBye) {
-      let user = `@${m.messageStubParameters[0].split`@`[0]}`
-      let bye = chat.sBye
-        .replace('@user', () => user)
-        .replace('@group', () => groupMetadata.subject)
-        .replace('@desc', () => groupMetadata.desc || 'sin descripción');
-      await conn.sendAi(m.chat, botname, textbot, bye, img, img)
-    } else {
-      let bye = `┌─★ _Elder Bot_  \n│「 _BAYY_ 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  _Largate_\n   │✑ _Jamás te quisimos aquí_\n   └───────────────┈ ⳹`
-      await conn.sendAi(m.chat, botname, textbot, bye, img, img)
-    }
-  }
-
-  if (chat.bienvenida && m.messageStubType == 32) {
-    if (chat.sBye) {
-      let user = `@${m.messageStubParameters[0].split`@`[0]}`
-      let bye = chat.sBye
-        .replace('@user', () => user)
-        .replace('@group', () => groupMetadata.subject)
-        .replace('@desc', () => groupMetadata.desc || 'sin descripción');
-      await conn.sendAi(m.chat, botname, textbot, bye, img, img)
-    } else {
-      let kick = `┌─★ _Elder Bot_  \n│「 _BAYY_ 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  _Largate_\n   │✑ _Jamás te quisimos aquí_\n   └───────────────┈ ⳹`
-      await conn.sendAi(m.chat, botname, textbot, kick, img, img)
-    }
-}}
