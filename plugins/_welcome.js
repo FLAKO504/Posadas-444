@@ -30,3 +30,19 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
   // El resto del código permanece igual
 }
+
+ // Mensajes de despedida
+     if (chat.despedida && (m.messageStubType == 28 || m.messageStubType == 32)) {
+       if (chat.sBye) {
+         let user = `@${m.messageStubParameters[0].split`@`[0]}`;
+         let bye = chat.sBye
+           .replace('@user', () => user)
+           .replace('@group', () => groupMetadata.subject)
+           .replace('@desc', () => groupMetadata.desc || 'sin descripción');
+         await conn.sendMessage(m.chat, { image: imgBuffer, caption: bye });
+       } else {
+         let despedida = `┌─★ _Elder Bot_ \n│「 _Adiós_ 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  ¡Que te vaya bien!\n   │✑ _Esperamos verte pronto en_ ${groupMetadata.subject}`;
+         await conn.sendMessage(m.chat, { image: imgBuffer, caption: despedida });
+       }
+     }
+   }
