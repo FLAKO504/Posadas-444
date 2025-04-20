@@ -11,7 +11,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
 // Redimensionar manteniendo proporciones
 const processedImg = await Jimp.read(imgBuffer);
-processedImg.resize(80, Jimp.AUTO); // Ajustar ancho a 800px
+processedImg.resize(40, Jimp.AUTO); // Ajustar ancho a 800px
 const img = await processedImg.getBufferAsync(Jimp.MIME_JPEG);
 
   let chat = global.db.data.chats[m.chat];
