@@ -9,7 +9,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
   // Procesar la imagen para redimensionarla
   const resizedImg = await Jimp.read(imgBuffer);
-  resizedImg.resize(750, 270); // Cambia el tamaño a 500x500 píxeles (ajusta según tus necesidades)
+  resizedImg.resize(300, 300); // Cambia el tamaño a 500x500 píxeles (ajusta según tus necesidades)
   const img = await resizedImg.getBufferAsync(Jimp.MIME_JPEG);
 
   let chat = global.db.data.chats[m.chat];
@@ -21,7 +21,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
         .replace('@user', () => user)
         .replace('@group', () => groupMetadata.subject)
         .replace('@desc', () => groupMetadata.desc || 'sin descripción');
-      await conn.sendAi(m.chat, botname, welcome, img, img);
+      await conn.sendAi(m.chat, botname, textbot, welcome, img, img);
     } else {
       let bienvenida = `┌─★ _Elder Bot_ \n│「 _Bienvenido_ 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  _Bienvenido_ a\n   │✑  ${groupMetadata.subject}\n   │✑  _Descripción_:\n${groupMetadata.desc || '_sin descripción_'}\n   └───────────────┈ ⳹`
       await conn.sendAi(m.chat, botname, textbot, bienvenida, img, img);
