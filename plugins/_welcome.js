@@ -7,10 +7,12 @@ export async function before(m, { conn, participants, groupMetadata }) {
   let pp = await conn.profilePictureUrl(m.messageStubParameters[0], 'image').catch(_ => 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60');
   let imgBuffer = await (await fetch(pp)).buffer();
 
-  // Procesar la imagen para redimensionarla
-  const resizedImg = await Jimp.read(imgBuffer);
-  resizedImg.resize(650, 350); // Cambia el tamaño a 500x500 píxeles (ajusta según tus necesidades)
-  const img = await resizedImg.getBufferAsync(Jimp.MIME_JPEG);
+  import Jimp from 'jimp';
+
+// Redimensionar manteniendo proporciones
+const processedImg = await Jimp.read(imgBuffer);
+processedImg.resize(800, Jimp.AUTO); // Ajustar ancho a 800px
+const img = await processedImg.getBufferAsync(Jimp.MIME_JPEG);
 
   let chat = global.db.data.chats[m.chat];
 
