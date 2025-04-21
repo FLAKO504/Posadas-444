@@ -28,7 +28,7 @@ const handler = async (m, { conn, args, isAdmin }) => {
     const setting = action === "cerrar" ? "locked" : "unlocked";
 
     try {
-      await conn.groupSettingUpdate(m.chat, setting); // Actualizar configuración del grupo
+      await conn.groupSettingUpdate(m.chat, setting);  Actualizar configuración del grupo
       m.reply(`✅ El grupo ha sido ${action === "cerrar" ? "cerrado" : "abierto"}.`);
     } catch (e) {
       m.reply("❌ Hubo un error al intentar actualizar el estado del grupo.");
@@ -38,7 +38,7 @@ const handler = async (m, { conn, args, isAdmin }) => {
 };
 
 handler.command = ["setgroup"];
-handler.admin = true; // Solo administradores pueden usar este comando
-handler.group = true; // Solo se puede usar en grupos
+handler.admin = true;  Solo administradores pueden usar este comando
+handler.group = true;  Solo se puede usar en grupos
 
 export default handler;
