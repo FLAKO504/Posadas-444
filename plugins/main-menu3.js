@@ -1,19 +1,10 @@
-let handler = async (m, { conn }) => {
-    try {
-        let d = new Date();
-        let locale = 'es';
-        let week = d.toLocaleDateString(locale, { weekday: 'long' });
-        let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
+let handler = async (m, { isPrems, conn }) => {
+let time = global.db.data.users[m.sender].lastcofre + 0 // 36000000 10 Horas //86400000 24 Horas
+if (new Date - global.db.data.users[m.sender].lastcofre < 0) throw `[❗𝐈𝐍𝐅𝐎❗] 𝚈𝙰 𝚁𝙴𝙲𝙻𝙰𝙼𝙰𝚂𝚃𝙴 𝚃𝚄 𝙲𝙾𝙵𝚁𝙴\𝚗𝚅𝚄𝙴𝙻𝚅𝙴 𝙴𝙽 *${msToTime(time - new Date())}* 𝙿𝙰𝚁𝙰 𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝚁𝙴𝙲𝙻𝙰𝙼𝙰𝚁`
 
-        let menu = `
-¡Hola! 👋🏻 @${m.sender.split("@")[0]}
-\`\`\`${week}, ${date}\`\`\`
-
-╭──𝗠𝗘𝗡𝗨 𝗟𝗢𝗚𝗢𝗦────
-│ 𝘉𝘪𝘦𝘯𝘷𝘦𝘯𝘪𝘥𝘰 ...
-│ 𝖣𝗂𝗌𝖿𝗋𝗎𝗍𝖺 𝗅𝖺 𝖼𝗋𝖾𝖺𝗍𝗂𝗏𝗂𝖽𝖺𝖽
-│ con el 𝗆𝖾𝗇𝗎́𝗅𝗈𝗀𝗈. 
-╰────────────────
+let img = 'https://i.postimg.cc/hv94Q6R8/IMG-20250408-WA0103.jpg'
+let texto = `• 𝐌𝐄𝐍𝐔-𝐋𝐎𝐆𝐎𝐒 •
+•°「 *𝘓𝘰𝘨𝘰 - 𝘮𝘢𝘬𝘦𝘳 🎨* 」°•
 
 ┊➺ 🖼️ .𝘭𝘰𝘨𝘰𝘤𝘰𝘳𝘢𝘻𝘰𝘯 (texto)
 ┊➺ 🖼️ .𝘭𝘰𝘨𝘰𝘤𝘩𝘳𝘪𝘴𝘵𝘮𝘢𝘴 (texto)
@@ -48,16 +39,25 @@ let handler = async (m, { conn }) => {
 ┊➺ 🖼️ .𝘭𝘰𝘨𝘰𝘷𝘪𝘥𝘦𝘰𝘨𝘢𝘮𝘪𝘯𝘨 (texto)
 ┊➺ 🖼️ _.sadcat_ (texto)
 ┊➺ 🖼️ _.tweet_ (comentario)`
-`.trim();
 
-        // Enviar solo el texto del menú
-        await conn.sendMessage(m.chat, { text: menu, mentions: [m.sender] });
-    } catch (e) {
-        await m.reply(`⚠ Error al ejecutar el comando. Intenta nuevamente o reporta este problema.\n\nDetalles del error:\n${e.message}`);
-        console.error(e);
-    }
-};
-
-handler.command = /^(menu3)$/i;
-handler.register = false;
-export default handler;
+const fkontak = {
+        "key": {
+    "participants":"0@s.whatsapp.net",
+                "remoteJid": "status@broadcast",
+                "fromMe": false,
+                "id": "Halo"
+        },
+        "message": {
+                "contactMessage": {
+                        "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+                }
+        },
+        "participant": "0@s.whatsapp.net"
+}
+await conn.sendFile(m.chat, img, 'img.jpg', texto, fkontak)
+global.db.data.users[m.sender].lastcofre = new Date * 1
+}
+handler.help = ['menu3']
+handler.tags = ['main', 'logo']
+handler.command = ['menulogos', 'logos', 'menu3'] 
+export default handler
