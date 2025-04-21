@@ -189,7 +189,7 @@ m.react('🔰');
 
         // Enviar solo el texto del menú
         await conn.sendMessage(m.chat, { 
-    image: { url: 'https://i.postimg.cc/hv94Q6R8/IMG-20250408-WA0103.jpg' }, 
+    image: { url: 'https://i.postimg.cc/52XqrZq6/Picsart-25-04-17-12-02-21-747.jpg' }, 
     caption: menu, 
     mentions: [m.sender] 
 });
