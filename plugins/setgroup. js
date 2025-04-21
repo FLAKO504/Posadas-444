@@ -1,0 +1,44 @@
+const handler = async (m, { conn, args, isAdmin }) => {
+  if (!isAdmin) return m.reply("❌ Solo los administradores pueden usar este comando.");
+
+  if (args.length < 2) {
+    return m.reply(
+      "Uso: .setgroup <abrir|cerrar> <tiempo en minutos>\n\nEjemplo:\n.setgroup cerrar 10\n(setea el grupo como cerrado en 10 minutos)."
+    );
+  }
+
+  const action = args[0].toLowerCase(); // "abrir" o "cerrar"
+  const time = parseInt(args[1]); // Tiempo en minutos
+
+  if (!["abrir", "cerrar"].includes(action)) {
+    return m.reply("❌ Acción no válida. Usa 'abrir' o 'cerrar'.");
+  }
+
+  if (isNaN(time) || time <= 0) {
+    return m.reply("❌ Ingresa un tiempo válido en minutos.");
+  }
+
+  const milliseconds = time * 60 * 1000; // Convertir minutos a milisegundos
+
+  // Confirmación inicial
+  m.reply(`✅ El grupo será ${action === "cerrar" ? "cerrado" : "abierto"} en ${time} minutos.`);
+
+  // Programar la acción
+  setTimeout(async () => {
+    const setting = action === "cerrar" ? "locked" : "unlocked";
+
+    try {
+      await conn.groupSettingUpdate(m.chat, setting); // Actualizar configuración del grupo
+      m.reply(`✅ El grupo ha sido ${action === "cerrar" ? "cerrado" : "abierto"}.`);
+    } catch (e) {
+      m.reply("❌ Hubo un error al intentar actualizar el estado del grupo.");
+      console.error(e);
+    }
+  }, milliseconds);
+};
+
+handler.command = ["setgroup"];
+handler.admin = true; // Solo administradores pueden usar este comando
+handler.group = true; // Solo se puede usar en grupos
+
+export default handler;
