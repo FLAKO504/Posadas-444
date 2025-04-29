@@ -77,5 +77,5 @@ const handler = async (msg, { conn, args }) => {
   });
 };
 
-handler.command = ["errar"];
+handler.command = ["cerrar"];
 module.exports = handler;
