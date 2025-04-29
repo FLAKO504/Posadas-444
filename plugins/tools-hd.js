@@ -26,6 +26,7 @@ const handler = async (m, { conn }) => {
 handler.help = ["hd"]  
 handler.tags = ["tools"]  
 handler.command = ["remini", "hd", "enhance"]  
+handler.register = true
 export default handler;
 
 async function getUpscaledImage(imageUrl) {
